@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramalan Cuaca</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>RAMALAN CUACA</h1>
+      <form class="d-flex">
+        <input
+          type="text"
+          id="city-input"
+          class="form-control me-1"
+          placeholder="Enter City"
+        />
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+      <div id="weather-data">
+        <div class="icon"></div>
+        <div class="temperature"></div>
+        <div class="description"></div>
+        <div class="details d-flex flex-wrap"></div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="js\forecast.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
